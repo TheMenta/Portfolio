@@ -1,0 +1,73 @@
+main {
+    background-color: aliceblue;
+    grid-gap: 10px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    border: 2px solid #040e1a;
+    display: grid;
+    }
+body, html{
+    background-image:url(Kepek/hatter2.jpg);
+    background-attachment: fixed;
+    height:auto;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+nav ul{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+}
+nav li{
+    list-style-type: none;
+    float: left;
+}
+nav li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+article{
+    grid-area:a;
+    padding-top: 40px;
+}
+#en {
+    margin: 10px;
+    padding: 10px;
+    max-width: 100px;
+    float: right;
+}
+article ul, p{
+    margin: 10px;
+    padding: 10px;
+}
+article ul, article p{
+    list-style: none;
+    text-align: center;
+    border: black;
+}
+
+footer {
+    text-align: center;
+}
+#munka1 {
+    display: grid;
+    text-align: left;
+}#munka2 {
+    display: grid;
+    text-align: right;
+}
+

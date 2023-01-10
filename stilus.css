@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+
+
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+        "h h h h h h h"
+        "n n n n n n n"
+        "a a a a a a a"
+        "f f f f f f f";
+    grid-gap: 10px;
+}
+section{
+    display:grid;
+    grid-gap:10px;      
+}
+section:first-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap:10px;   
+}
+
+nav{
+    grid-area:n;
+}
+
+article{
+    grid-area:a;
+    padding: 50px;
+}
+
+footer{
+    grid-area:f;
+    text-align: center;
+    padding: 70px;
+}
+
+body, html{
+    background-image:url(Kepek/hatter.jpg);
+    background-attachment: fixed;
+    height:auto;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.kep{
+    border: 1px solid rgb(2, 10, 3);
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgb(86, 207, 126);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 10px 10px; 
+    margin-right:auto;
+}
+
+.kep img{
+    width: 100%;
+}
+
+.kep:hover{
+    background-color: buttonhighlight;
+
+}
