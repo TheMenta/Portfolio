@@ -70,4 +70,11 @@ footer {
     display: grid;
     text-align: right;
 }
-
+@media screen and (max-width:900px){
+    nav{
+        width: 100%;
+        padding-left: 10px;
+    }
+    nav ul{
+        padding: 0;
+    }
