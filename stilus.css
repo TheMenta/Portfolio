@@ -13,6 +13,9 @@ main{
         "f f f f f f f";
     grid-gap: 10px;
 }
+header {
+    grid-area:h;
+}
 section{
     display:grid;
     grid-gap:10px;      
@@ -65,7 +68,21 @@ body, html{
     width: 100%;
 }
 
-.kep:hover{
-    background-color: buttonhighlight;
 
 }
+@media screen and (max-width:900px){
+    main{
+        grid-template-areas:
+            "h"
+            "n"
+            "s"
+            "a"
+            "f";
+    }
+    section:first-child{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        grid-gap:10px; 
+
+    }
